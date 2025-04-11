@@ -1,0 +1,316 @@
+C:\Users\user\.jdks\openjdk-23.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\lib\idea_rt.jar=57821:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\user\IdeaProjects\untitled1\out\production\untitled1 org.example.AttendanceSystem
+No existing employee data found. Starting fresh.
+No existing attendance data found. Starting fresh.
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 3
+
+=== Reports & Import/Export ===
+1. Export Employee Data
+2. Export Attendance Data
+3. Import Employee Data
+4. Import Attendance Data
+5. Generate Summary Report
+6. Back to Main Menu
+Choose an option: 3
+Enter the file path for employee data : C:\\Users\\user\\Desktop\\pls\\courseW\\listOfEmpl.csv
+Successfully imported 50 employees.
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 1
+
+=== Employee Management ===
+1. Add Employee
+2. View All Employees
+3. Update Employee
+4. Delete Employee
+5. Back to Main Menu
+Choose an option: 2
+
+--- Employee List ---
+ID         Name                 Department      Email               
+1          John Doe             john.doe@example.com HR                  
+2          Jane Smith           jane.smith@example.com Finance             
+3          Michael Brown        michael.brown@example.com IT                  
+4          Emily Davis          emily.davis@example.com Marketing           
+5          David Wilson         david.wilson@example.com Sales               
+6          Linda Johnson        linda.johnson@example.com HR                  
+7          James White          james.white@example.com Finance             
+8          Patricia Taylor      patricia.taylor@example.com IT                  
+9          Robert Lee           robert.lee@example.com Marketing           
+10         Jennifer Harris      jennifer.harris@example.com Sales               
+11         William Clark        william.clark@example.com HR                  
+12         Mary Lewis           mary.lewis@example.com Finance             
+13         Joseph Walker        joseph.walker@example.com IT                  
+14         Elizabeth Hall       elizabeth.hall@example.com Marketing           
+15         Charles Allen        charles.allen@example.com Sales               
+16         Susan Young          susan.young@example.com HR                  
+17         Thomas King          thomas.king@example.com Finance             
+18         Margaret Scott       margaret.scott@example.com IT                  
+19         Christopher Adams    christopher.adams@example.com Marketing           
+20         Rebecca Nelson       rebecca.nelson@example.com Sales               
+21         Daniel Carter        daniel.carter@example.com HR                  
+22         Sarah Mitchell       sarah.mitchell@example.com Finance             
+23         George Perez         george.perez@example.com IT                  
+24         Karen Roberts        karen.roberts@example.com Marketing           
+25         Edward Turner        edward.turner@example.com Sales               
+26         Jessica Collins      jessica.collins@example.com HR                  
+27         Richard Sanchez      richard.sanchez@example.com Finance             
+28         Lauren Morris        lauren.morris@example.com IT                  
+29         Benjamin Rogers      benjamin.rogers@example.com Marketing           
+30         Katherine Reed       katherine.reed@example.com Sales               
+31         Alexander Cook       alexander.cook@example.com HR                  
+32         Deborah Morgan       deborah.morgan@example.com Finance             
+33         Steven Howard        steven.howard@example.com IT                  
+34         Melissa Ward         melissa.ward@example.com Marketing           
+35         Paul Mitchell        paul.mitchell@example.com Sales               
+36         Elizabeth Cooper     elizabeth.cooper@example.com HR                  
+37         Matthew Peterson     matthew.peterson@example.com Finance             
+38         Rebecca Gray         rebecca.gray@example.com IT                  
+39         John Murphy          john.murphy@example.com Marketing           
+40         Amy Evans            amy.evans@example.com Sales               
+41         Christopher Torres   christopher.torres@example.com HR                  
+42         Kimberly Simmons     kimberly.simmons@example.com Finance             
+43         David Butler         david.butler@example.com IT                  
+44         Anna Gonzalez        anna.gonzalez@example.com Marketing           
+45         Andrew Foster        andrew.foster@example.com Sales               
+46         Jessica Ramirez      jessica.ramirez@example.com HR                  
+47         Michael James        michael.james@example.com Finance             
+48         Deborah Alexander    deborah.alexander@example.com IT                  
+49         Frank Hall           frank.hall@example.com Marketing           
+50         Grace Johnson        grace.johnson@example.com Sales               
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 1
+
+=== Employee Management ===
+1. Add Employee
+2. View All Employees
+3. Update Employee
+4. Delete Employee
+5. Back to Main Menu
+Choose an option: 4
+Enter Employee ID to delete: 50
+Employee deleted successfully!
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 1
+
+=== Employee Management ===
+1. Add Employee
+2. View All Employees
+3. Update Employee
+4. Delete Employee
+5. Back to Main Menu
+Choose an option: 1
+
+--- Add New Employee ---
+ID: 123
+Name: Maria
+Department: IT
+Email: maria@com
+Employee added successfully!
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 1
+
+=== Employee Management ===
+1. Add Employee
+2. View All Employees
+3. Update Employee
+4. Delete Employee
+5. Back to Main Menu
+Choose an option: 3
+Enter Employee ID to update: 123
+New Name (leave blank to keep unchanged): Masha
+New Department (leave blank to keep unchanged): 
+New Email (leave blank to keep unchanged): masha@com
+Employee updated successfully!
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 1
+
+=== Employee Management ===
+1. Add Employee
+2. View All Employees
+3. Update Employee
+4. Delete Employee
+5. Back to Main Menu
+Choose an option: 2
+
+--- Employee List ---
+ID         Name                 Department      Email               
+1          John Doe             john.doe@example.com HR                  
+2          Jane Smith           jane.smith@example.com Finance             
+3          Michael Brown        michael.brown@example.com IT                  
+4          Emily Davis          emily.davis@example.com Marketing           
+5          David Wilson         david.wilson@example.com Sales               
+6          Linda Johnson        linda.johnson@example.com HR                  
+7          James White          james.white@example.com Finance             
+8          Patricia Taylor      patricia.taylor@example.com IT                  
+9          Robert Lee           robert.lee@example.com Marketing           
+10         Jennifer Harris      jennifer.harris@example.com Sales               
+11         William Clark        william.clark@example.com HR                  
+12         Mary Lewis           mary.lewis@example.com Finance             
+13         Joseph Walker        joseph.walker@example.com IT                  
+14         Elizabeth Hall       elizabeth.hall@example.com Marketing           
+15         Charles Allen        charles.allen@example.com Sales               
+16         Susan Young          susan.young@example.com HR                  
+17         Thomas King          thomas.king@example.com Finance             
+18         Margaret Scott       margaret.scott@example.com IT                  
+19         Christopher Adams    christopher.adams@example.com Marketing           
+20         Rebecca Nelson       rebecca.nelson@example.com Sales               
+21         Daniel Carter        daniel.carter@example.com HR                  
+22         Sarah Mitchell       sarah.mitchell@example.com Finance             
+23         George Perez         george.perez@example.com IT                  
+24         Karen Roberts        karen.roberts@example.com Marketing           
+25         Edward Turner        edward.turner@example.com Sales               
+26         Jessica Collins      jessica.collins@example.com HR                  
+27         Richard Sanchez      richard.sanchez@example.com Finance             
+28         Lauren Morris        lauren.morris@example.com IT                  
+29         Benjamin Rogers      benjamin.rogers@example.com Marketing           
+30         Katherine Reed       katherine.reed@example.com Sales               
+31         Alexander Cook       alexander.cook@example.com HR                  
+32         Deborah Morgan       deborah.morgan@example.com Finance             
+33         Steven Howard        steven.howard@example.com IT                  
+34         Melissa Ward         melissa.ward@example.com Marketing           
+35         Paul Mitchell        paul.mitchell@example.com Sales               
+36         Elizabeth Cooper     elizabeth.cooper@example.com HR                  
+37         Matthew Peterson     matthew.peterson@example.com Finance             
+38         Rebecca Gray         rebecca.gray@example.com IT                  
+39         John Murphy          john.murphy@example.com Marketing           
+40         Amy Evans            amy.evans@example.com Sales               
+41         Christopher Torres   christopher.torres@example.com HR                  
+42         Kimberly Simmons     kimberly.simmons@example.com Finance             
+43         David Butler         david.butler@example.com IT                  
+44         Anna Gonzalez        anna.gonzalez@example.com Marketing           
+45         Andrew Foster        andrew.foster@example.com Sales               
+46         Jessica Ramirez      jessica.ramirez@example.com HR                  
+47         Michael James        michael.james@example.com Finance             
+48         Deborah Alexander    deborah.alexander@example.com IT                  
+49         Frank Hall           frank.hall@example.com Marketing           
+123        Masha                IT              masha@com           
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 2
+
+=== Attendance Tracking ===
+1. Clock In
+2. Clock Out
+3. View Attendance Records
+4. Back to Main Menu
+Choose an option: 1
+Enter Employee ID: 1
+Clocked in at: 2025-04-12 03:11
+Status: Present
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 2
+
+=== Attendance Tracking ===
+1. Clock In
+2. Clock Out
+3. View Attendance Records
+4. Back to Main Menu
+Choose an option: 2
+Enter Employee ID: 2
+Error: No clock-in record found for this employee or already clocked out!
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 2
+
+=== Attendance Tracking ===
+1. Clock In
+2. Clock Out
+3. View Attendance Records
+4. Back to Main Menu
+Choose an option: 
+Invalid input. Please enter a number: 3
+
+--- Attendance Records ---
+ID         Employee             Clock In             Clock Out            Status    
+1          John Doe             2025-04-12 03:11     N/A                  Present   
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 3
+
+=== Reports & Import/Export ===
+1. Export Employee Data
+2. Export Attendance Data
+3. Import Employee Data
+4. Import Attendance Data
+5. Generate Summary Report
+6. Back to Main Menu
+Choose an option: 2
+Enter filename for attendance data (without extension): attends
+Attendance data exported to attends.csv successfully!
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 3
+
+=== Reports & Import/Export ===
+1. Export Employee Data
+2. Export Attendance Data
+3. Import Employee Data
+4. Import Attendance Data
+5. Generate Summary Report
+6. Back to Main Menu
+Choose an option: 5
+
+=== Summary Report ===
+Total Employees: 50
+Currently Clocked In: 1
+Total Clocked Out: 0
+
+=== Employee Attendance System ===
+1. Employee Management
+2. Attendance Tracking
+3. Reports & Import/Export
+4. Exit
+Choose an option: 4
+
+Process finished with exit code 0
