@@ -119,18 +119,18 @@ String Processing for CSV Serialization/Deserialization:
 String manipulation is crucial for converting in-memory Java objects into CSV format for file storage (serialization) and vice versa (deserialization).
 
 Serialization (Object to CSV String):
-    ```java
+    
     public String toCSV() {
         return String.join(",", id, name, department, email);
     }
-    ```
-    The `toCSV()` method in the `Employee` and `AttendanceRecord` classes uses `String.join()` to concatenate the object's attributes into a comma-separated string.
+    
+   The `toCSV()` method in the `Employee` and `AttendanceRecord` classes uses `String.join()` to concatenate the object's attributes into a comma-separated string.
 
 Parsing (CSV String to Object Attributes):
-    ```java
+    
     String[] data = line.split(",");
-    ```
-    When reading data from a CSV file, the `split()` method of the `String` class is used to divide each line into an array of strings based on the comma delimiter. These individual strings are then used to populate the attributes of the corresponding Java object.
+    
+   When reading data from a CSV file, the `split()` method of the `String` class is used to divide each line into an array of strings based on the comma delimiter. These individual strings are then used to populate the attributes of the corresponding Java object.
  String Processing
 Used for serialization/deserialization with CSV files.
 
@@ -138,7 +138,7 @@ Used for serialization/deserialization with CSV files.
 
 The system utilizes `BufferedReader` for efficiently reading data line by line from CSV files and `PrintWriter` for writing formatted data to CSV files.
 Reading from CSV (`BufferedReader`):
-    ```java
+    
     try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
         String line;
         while ((line = reader.readLine()) != null) {
@@ -147,27 +147,27 @@ Reading from CSV (`BufferedReader`):
     } catch (IOException e) {
         System.out.println("Error reading file: " + e.getMessage());
     }
-    ```
-    The `BufferedReader` allows for buffered reading, which is more efficient for handling larger files. The `readLine()` method reads one line at a time until the end of the file is reached.
+    
+   The `BufferedReader` allows for buffered reading, which is more efficient for handling larger files. The `readLine()` method reads one line at a time until the end of the file is reached.
 
 Writing to CSV (`PrintWriter`):
-    ```java
+    
     try (PrintWriter writer = new PrintWriter(new FileWriter(filePath))) {
         // Write data to the CSV file using writer.println()
     } catch (IOException e) {
         System.out.println("Error writing to file: " + e.getMessage());
     }
-    ```
-    The `PrintWriter` provides methods for writing formatted output to a file. The `try-with-resources` statement ensures that the `BufferedReader` and `PrintWriter` are automatically closed after use, preventing resource leaks.
+    
+  The `PrintWriter` provides methods for writing formatted output to a file. The `try-with-resources` statement ensures that the `BufferedReader` and `PrintWriter` are automatically closed after use, preventing resource leaks.
 
 Import and Export Functions:
 
 The `AttendanceSystem` class includes dedicated functions for importing and exporting both employee and attendance data to and from CSV files. These functions handle file reading, data parsing, object creation, and file writing.
 
 Example (Importing Employee Data):
-    ```java
+    
     private static void importEmployeeData() {
-        System.out.print("Enter filename of employee data to import (with extension): ");
+        System.out.print("Enter Enter the file path for employee data: ");
         String filename = scanner.nextLine();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
@@ -184,8 +184,8 @@ Example (Importing Employee Data):
             System.out.println("Error importing employee data: " + e.getMessage());
         }
     }
-    ```
-    The `importEmployeeData()` function prompts the user for a CSV file, reads it line by line (skipping the header), splits each line into data fields, and creates new `Employee` objects, adding them to the `employees` list. Similar logic is implemented for exporting employee and attendance data and importing attendance data.
+  
+   The `importEmployeeData()` function prompts the user for a CSV file, reads it line by line (skipping the header), splits each line into data fields, and creates new `Employee` objects, adding them to the `employees` list. Similar logic is implemented for exporting employee and attendance data and importing attendance data.
 
 
 
