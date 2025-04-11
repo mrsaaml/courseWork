@@ -325,7 +325,7 @@ public class AttendanceSystem {
     }
 
     private static void importEmployeeData() {
-        System.out.print("Enter filename of employee data to import (with extension): ");
+        System.out.print("Enter the file path for employee data:");
         String filename = scanner.nextLine();
 
         List<Employee> importedEmployees = new ArrayList<>();
@@ -367,7 +367,7 @@ public class AttendanceSystem {
     }
 
     private static void importAttendanceData() {
-        System.out.print("Enter filename of attendance data to import (with extension): ");
+        System.out.print("Enter the file path for attendance data:");
         String filename = scanner.nextLine();
 
         List<AttendanceRecord> importedRecords = new ArrayList<>();
