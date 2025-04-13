@@ -4,6 +4,9 @@ import java.io.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.stream.*;
+
+
 
 class Employee {
     private String id, name, department, email;
@@ -57,13 +60,13 @@ class AttendanceRecord {
 }
 
 public class AttendanceSystem {
+
     private static List<Employee> employees = new ArrayList<>();
     private static List<AttendanceRecord> attendanceRecords = new ArrayList<>();
     private static final String EMPLOYEE_FILE = "employees.csv";
     private static final String ATTENDANCE_FILE = "attendance.csv";
     private static Scanner scanner = new Scanner(System.in);
-    private static final LocalTime WORK_START = LocalTime.of(9, 0);
-    private static final LocalTime WORK_END = LocalTime.of(17, 0);
+
 
     public static void main(String[] args) {
         loadData();
@@ -86,6 +89,7 @@ public class AttendanceSystem {
             }
         }
     }
+
 
     private static void employeeMenu() {
         System.out.println("\n=== Employee Management ===");
@@ -186,6 +190,7 @@ public class AttendanceSystem {
         System.out.println("Employee deleted successfully!");
     }
 
+
     private static void attendanceMenu() {
         System.out.println("\n=== Attendance Tracking ===");
         System.out.println("1. Clock In");
@@ -204,6 +209,9 @@ public class AttendanceSystem {
         }
     }
 
+
+    private static final LocalTime WORK_START = LocalTime.of(9, 0); // 9:00 AM
+    private static final LocalTime WORK_END = LocalTime.of(17, 0); // 5:00 PM
     private static void clockIn() {
         System.out.print("Enter Employee ID: ");
         String id = scanner.nextLine();
@@ -219,6 +227,7 @@ public class AttendanceSystem {
 
         LocalDateTime now = LocalDateTime.now();
         String status = "Present";
+
 
         if (now.toLocalTime().isAfter(WORK_START.plusMinutes(15))) {
             status = "Late";
@@ -245,9 +254,11 @@ public class AttendanceSystem {
         LocalDateTime now = LocalDateTime.now();
         record.get().setClockOut(now);
 
+
         if (now.toLocalTime().isBefore(WORK_END)) {
             record.get().setStatus("Early Departure");
         }
+
 
         System.out.println("Clocked out at: " + now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")));
         System.out.println("Final Status: " + record.get().getStatus());
@@ -275,6 +286,7 @@ public class AttendanceSystem {
                     record.getStatus());
         });
     }
+
 
     private static void reportsMenu() {
         System.out.println("\n=== Reports & Import/Export ===");
@@ -325,14 +337,14 @@ public class AttendanceSystem {
     }
 
     private static void importEmployeeData() {
-        System.out.print("Enter the file path for employee data:");
-        String filename = scanner.nextLine();
+        System.out.print("Enter path to employee data to import: ");
+        String path = scanner.nextLine();
 
         List<Employee> importedEmployees = new ArrayList<>();
         int importedCount = 0;
         int errorCount = 0;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             reader.readLine();
 
             String line;
@@ -349,6 +361,7 @@ public class AttendanceSystem {
                     errorCount++;
                 }
             }
+
 
             if (importedCount > 0) {
                 employees = importedEmployees;
@@ -367,14 +380,14 @@ public class AttendanceSystem {
     }
 
     private static void importAttendanceData() {
-        System.out.print("Enter the file path for attendance data:");
-        String filename = scanner.nextLine();
+        System.out.print("Enter path to attendance data to import: ");
+        String path = scanner.nextLine();
 
         List<AttendanceRecord> importedRecords = new ArrayList<>();
         int importedCount = 0;
         int errorCount = 0;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             reader.readLine();
 
             String line;
@@ -393,6 +406,7 @@ public class AttendanceSystem {
                     errorCount++;
                 }
             }
+
 
             if (importedCount > 0) {
                 attendanceRecords = importedRecords;
@@ -421,7 +435,9 @@ public class AttendanceSystem {
         System.out.println("Total Clocked Out: " + totalClockedOut);
     }
 
+
     private static void loadData() {
+
         try (BufferedReader reader = new BufferedReader(new FileReader(EMPLOYEE_FILE))) {
             String line;
             while ((line = reader.readLine()) != null) {
@@ -431,6 +447,7 @@ public class AttendanceSystem {
         } catch (IOException e) {
             System.out.println("No existing employee data found. Starting fresh.");
         }
+
 
         try (BufferedReader reader = new BufferedReader(new FileReader(ATTENDANCE_FILE))) {
             String line;
@@ -461,6 +478,7 @@ public class AttendanceSystem {
         }
     }
 
+    
     private static int getIntInput(int min, int max) {
         while (true) {
             try {
