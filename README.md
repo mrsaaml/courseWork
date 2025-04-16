@@ -1,8 +1,9 @@
-# Project Report: Employee Attendance System
+# Project Title: Employee Attendance System
 
 ## Student Name: Mitalipova Saiida  
 
-## Project Title: Employee Attendance System
+
+
 
 ### Description:
 The Employee Attendance System is a Java-based console application designed to manage employee data and track daily attendance efficiently. The system allows to perform CRUD (Create, Read, Update, Delete) operations on employee records, monitor clock-in and clock-out times, and manage attendance statuses. Additionally, it supports importing and exporting data via CSV files and provides summary reporting functionalities to assist in evaluating attendance trends.
