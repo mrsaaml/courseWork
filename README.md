@@ -10,22 +10,34 @@ The Employee Attendance System is a Java-based console application designed to m
 ### Objectives:
 
 <ins>Employee Management</ins>:
+
 Enable efficient handling of employee data including adding, viewing, updating, and deleting employee information.
+
 <ins>Attendance Tracking: </ins>
+
 Facilitate accurate recording of clock-in and clock-out times with status tracking for each employee.
+
 <ins>Data Persistence: </ins>
+
 Ensure all employee and attendance data is saved persistently through CSV file storage, maintaining data across sessions.
-Reporting and Analysis:
+
+<ins>Reporting and Analysis:</ins>
 Generate summary reports that give insights into employee attendance patterns, such as the number currently clocked in or total records.
-Data Import/Export:
+
+<ins>Data Import/Export: </ins>
+
 Provide functionality for exporting current data and importing existing employee or attendance records from external CSV files to maintain flexibility and continuity.
-User-Friendly Interface:
+
+<ins>User-Friendly Interface: </ins>
+
 Offer a clear and interactive command-line interface with robust input validation and helpful feedback messages to guide users through different operations.
-Error Handling:
+
+<ins> Error Handling:</ins>
+
 Implement exception handling and validations to ensure smooth operation and clear error messages in case of invalid input or file issues.
 
 
-Project Requirement List
+### Project Requirement List
 
 1. Create Employee
    - Add new employees with unique ID, name, department, and email
@@ -83,7 +95,7 @@ Project Requirement List
 
 
 
-Documentation
+### Documentation
 
 
 Data Structures:
